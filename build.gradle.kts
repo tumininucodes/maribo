@@ -14,6 +14,10 @@ repositories {
     maven("https://maven.pkg.jetbrains.space/public/p/compose/dev")
 }
 
+dependencies {
+    commonMainImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+}
+
 kotlin {
     jvm {
         compilations.all {
@@ -25,6 +29,7 @@ kotlin {
         val jvmMain by getting {
             dependencies {
                 implementation(compose.desktop.currentOs)
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
             }
         }
         val jvmTest by getting

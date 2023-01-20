@@ -1,3 +1,4 @@
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.window.Window
 import androidx.compose.ui.window.application
 import ui.StopWatchScreen
@@ -9,7 +10,7 @@ fun main() = application {
         onCloseRequest = ::exitApplication,
         title = "StopWatch",
     ) {
-        StopWatchScreen()
+        StopWatchScreen(modifier = Modifier)
     }
 
 }
