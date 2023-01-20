@@ -47,7 +47,7 @@ fun StopWatchScreen(
                     Text(
                         text = stopWatch.formattedTime,
                         fontWeight = FontWeight.Bold,
-                        fontSize = 30.sp,
+                        fontSize = 60.sp,
                         color = Color.White
                     )
                     Spacer(modifier.height(16.dp))

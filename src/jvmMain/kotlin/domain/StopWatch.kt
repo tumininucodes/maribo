@@ -23,15 +23,14 @@ class StopWatch {
     fun start() {
         if (isActive) return
 
-//        withContext(Dispatchers.)
         coroutineScope.launch {
             lastTimeStamp = System.currentTimeMillis()
             this@StopWatch.isActive = true
+
             while (this@StopWatch.isActive) {
                 delay(10L)
                 timeMillis += System.currentTimeMillis() - lastTimeStamp
                 lastTimeStamp = System.currentTimeMillis()
-                println(timeMillis)
                 formattedTime = formatTime(timeMillis)
             }
         }
