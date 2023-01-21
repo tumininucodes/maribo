@@ -41,11 +41,14 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(TargetFormat.Dmg, TargetFormat.Msi, TargetFormat.Deb)
-            packageName = "StopWatchComposeDektop"
+            packageName = "Stopwatch Timer"
             packageVersion = "1.0.0"
             jvmArgs(
                 "-Dapple.awt.application.appearance=system"
             )
+            macOS {
+                iconFile.set(project.file("icon.icns"))
+            }
         }
     }
 }
