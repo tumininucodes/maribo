@@ -3,7 +3,8 @@
 Maribo is a Jetpack Compose desktop multiplatform stopwatch application
 
 
-## App Video
+# app view
 
-https://user-images.githubusercontent.com/57676305/213844570-4209feaf-7ec0-4494-a3d8-9e139ae8f27c.mp4
 
+
+![My Movie](https://user-images.githubusercontent.com/57676305/213844710-87cb7f0d-8498-45f9-9639-3e4934b9a047.gif)
